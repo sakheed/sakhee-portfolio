@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sakhee-portfolio/static/css/main.c6a7e2cd.css",
-    "main.js": "/sakhee-portfolio/static/js/main.46368fc4.js",
+    "main.js": "/sakhee-portfolio/static/js/main.6b4a5d81.js",
     "static/js/453.0a2e38eb.chunk.js": "/sakhee-portfolio/static/js/453.0a2e38eb.chunk.js",
     "static/media/moviepedia.png": "/sakhee-portfolio/static/media/moviepedia.9a1a1c6cff243c3fbd4a.png",
     "static/media/haksafety.png": "/sakhee-portfolio/static/media/haksafety.ac1a9a5ac92c53b41f59.png",
@@ -10,11 +10,11 @@
     "static/media/signalq.PNG": "/sakhee-portfolio/static/media/signalq.63937570e90971732eae.PNG",
     "index.html": "/sakhee-portfolio/index.html",
     "main.c6a7e2cd.css.map": "/sakhee-portfolio/static/css/main.c6a7e2cd.css.map",
-    "main.46368fc4.js.map": "/sakhee-portfolio/static/js/main.46368fc4.js.map",
+    "main.6b4a5d81.js.map": "/sakhee-portfolio/static/js/main.6b4a5d81.js.map",
     "453.0a2e38eb.chunk.js.map": "/sakhee-portfolio/static/js/453.0a2e38eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6a7e2cd.css",
-    "static/js/main.46368fc4.js"
+    "static/js/main.6b4a5d81.js"
   ]
 }
