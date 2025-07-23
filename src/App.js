@@ -8,10 +8,16 @@ import Projects from "./Projects";
 import Resume from "./Resume";
 import Footer from "./Footer";
 
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
+
+
 function App() {
   useEffect(() => {
-    // Force scroll to top on first load
-    window.scrollTo(0, 0);
+
+      window.history.replaceState(null, null, window.location.pathname);
+
     
     const handleClick = (e) => {
       const target = e.target.closest('a[href^="#"]');

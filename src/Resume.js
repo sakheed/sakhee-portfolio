@@ -1,9 +1,33 @@
-import React from 'react';
 import { ExternalLink, Download } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+
 
 function Resume() {
+  const resumeRef = useRef();
+  const [loadIframe, setLoadIframe] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadIframe(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (resumeRef.current) {
+      observer.observe(resumeRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section id="resume" className="py-20 bg-gray-50">
+    <section id="resume" className="py-20 bg-gray-50" ref={resumeRef}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Resume</h2>
@@ -11,11 +35,13 @@ function Resume() {
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
             <div className="flex flex-col items-center space-y-6">
               <div className="w-full h-96 bg-gray-100 rounded-lg overflow-hidden shadow-inner">
-                <iframe 
-                  src={process.env.PUBLIC_URL + '/resume.pdf'}
-                  title="Resume Preview"
-                  className="w-full h-full"
-                />
+                {loadIframe && (
+                  <iframe 
+                    src={process.env.PUBLIC_URL + '/resume.pdf'}
+                    title="Resume Preview"
+                    className="w-full h-full"
+                  />
+                )}
               </div>
               <div className="flex space-x-4">
                 <a href={process.env.PUBLIC_URL + '/resume.pdf'}
@@ -25,7 +51,7 @@ function Resume() {
                   <span>View Resume</span>
                 </a>
                 <a href={process.env.PUBLIC_URL + '/resume.pdf'}
-                   download
+                   download="Sakhee_Desai_Resume.pdf"
                    className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors inline-flex items-center space-x-2">
                   <Download size={20} />
                   <span>Download PDF</span>
