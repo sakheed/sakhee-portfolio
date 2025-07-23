@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -18,7 +17,7 @@ function Header() {
         ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-200' 
         : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
