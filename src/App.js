@@ -10,6 +10,9 @@ import Footer from "./Footer";
 
 function App() {
   useEffect(() => {
+    // Force scroll to top on first load
+    window.scrollTo(0, 0);
+    
     const handleClick = (e) => {
       const target = e.target.closest('a[href^="#"]');
       if (target) {
