@@ -19,7 +19,7 @@ function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 leading-relaxed">
-              I am a  <span className="text-blue-600 font-semibold"> product driven technologist</span> with a dual degree in  <span className="text-blue-600 font-semibold"> computer science</span> and <span className="text-blue-600 font-semibold"> finance</span>, minors in <span className="text-blue-600 font-semibold"> artificial intelligence</span> and <span className="text-blue-600 font-semibold"> entreprenuership</span>, and a passion for <span className="text-blue-600 font-semibold"> building impactful solutions</span> at the intersection of business and technology. 
+              I am a  <span className="text-blue-600 font-semibold"> product driven technologist</span> with a dual degree in  <span className="text-blue-600 font-semibold"> computer science</span> and <span className="text-blue-600 font-semibold"> finance</span>, minors in <span className="text-blue-600 font-semibold"> artificial intelligence</span> and <span className="text-blue-600 font-semibold"> entreprenuership</span>, and a passion for <span className="text-blue-600 font-semibold"> building impactful solutions</span> at the intersection of finance and technology. 
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed">

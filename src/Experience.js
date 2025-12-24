@@ -4,15 +4,25 @@ import { Briefcase, MapPin } from 'lucide-react';
 function Experience() {
   const experiences = [
     {
-      company: "JPMorgan Chase & Co.",
-      position: "Software Engineering Intern",
-      date: "Summer 2024",
+      company: "J.P. Morgan Chase",
+      position: "Software Engineer I",
+      date: "July 2025 - Present",
       location: "Wilmington, DE",
       description: [
-        "Developed a custom AI-powered chatbot using OpenAI LLMs and Python, streamlining daily operations for 50+ model reviewers.",
-        "Designed and deployed containerized microservices using Kubernetes and Docker, accelerating deployment pipelines by 50%.",
-        "Led migration from on-prem systems to AWS cloud, configuring secure S3 storage and optimizing resource provisioning.",
-        "Refactored infrastructure by consolidating from 38 Dockerfiles to 6, improving maintainability and reducing image build times."
+        "Built Databricks dashboards analyzing cloud spending, enabling senior leadership to optimize resource allocation across 10+ infrastructure and development teams.",
+        "Designed and managed production-grade AWS infrastructure using Terraform, eliminating manual setup and ensuring consistency.",
+        "Developed Python and SQL data transformation pipelines processing large-scale data to support firmwide FP&A forecasting."
+      ]
+    },
+    {
+      company: "J.P. Morgan Chase",
+      position: "Software Engineering Intern",
+      date: "July 2024 - August 2024",
+      location: "Wilmington, DE",
+      description: [
+        "Created a custom AI-powered chatbot using OpenAI LLMs and Python, improving productivity for 50+ model reviewers.",
+        "Led a major infrastructure refactor by consolidating 38 Dockerfiles into 6 reusable base images, cutting image build times by over 50% and significantly improving maintainability.",
+        "Built and deployed containerized microservices with Kubernetes."
       ]
     },
     {
@@ -27,21 +37,21 @@ function Experience() {
     },
     {
       company: "AmeriHealth Caritas",
-      position: "Information Solutions Intern",
-      date: "Summer 2023",
-      location: "Philadelphia, PA", 
+      position: "Enterprise Architecture Intern",
+      date: "June 2023 - August 2023",
+      location: "Newton Square, PA", 
       description: [
-        "Designed scalable solution architecture diagrams and built an internal SharePoint portal to centralize tech lab documentation.",
-        "Collaborated across IT and operations teams to document data flow and improve stakeholder visibility into enterprise systems."
+        "Built internal dashboards visualizing enterprise system integrations across cloud and on-prem environments, improving visibility into data flows and dependencies.",
+        "Worked closely with engineers and business stakeholders to improve technical documentation and architectural clarity."
       ]
     },
     {
-      company: "Siegfried Group",
-      position: "Financial Planning & Analysis Intern",
-      date: "Summer 2022",
+      company: "The Siegfried Group",
+      position: "Financial Planning and Analysis Intern",
+      date: "November 2021 - May 2023",
       location: "Wilmington, DE",
       description: [
-        "Automated repetitive monthly reporting tasks via scripting, enabling faster turnaround and increased forecasting accuracy."
+        "Automated recurring financial reports using Python to bridge finance and engineering workflows, for data-driven decision-making."
       ]
     }
   ];
@@ -76,9 +86,12 @@ function Experience() {
                       {exp.location}
                     </div>
                   </div>
-                  <ul className="text-gray-600 list-disc list-inside space-y-2">
+                  <ul className="space-y-3 mt-4">
                     {exp.description.map((point, i) => (
-                      <li key={i}>{point}</li>
+                      <li key={i} className="flex items-start">
+                        <span className="flex-shrink-0 w-1.5 h-1.5 mt-2.5 bg-blue-600 rounded-full mr-3"></span>
+                        <span className="text-gray-600 leading-relaxed">{point}</span>
+                      </li>
                     ))}
                   </ul>
                 </div>

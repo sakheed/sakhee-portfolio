@@ -17,7 +17,7 @@ function Footer() {
               </div>
             </div>
             <p className="text-gray-400">
-              Passionate about building innovative solutions at the intersection of technology and business.
+              Passionate about building innovative solutions at the intersection of technology and finance.
             </p>
           </div>
 

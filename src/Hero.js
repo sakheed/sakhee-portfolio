@@ -8,7 +8,6 @@ function Hero() {
     "Software Engineer",
     "Full-Stack Developer",
     "AI Enthusiast",
-    "Aspiring Product Manager",
   ];
 
   useEffect(() => {
@@ -39,7 +38,7 @@ function Hero() {
             </div>
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
               Passionate about building innovative solutions at the intersection
-              of technology and business.
+              of technology and finance.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
